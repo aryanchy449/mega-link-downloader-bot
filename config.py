@@ -16,16 +16,16 @@ class Config(object):
     Mega_password = os.environ.get("Mega_password", "None") # This is not necessary! Enter your mega password only if you have a mega.nz account with pro/business features.
     #If deploying on vps edit the above value as example := Mega_password = "Your-Mega_password-inside-inverted-commas."
     
-    Bot_username = os.environ.get("Bot_username", "") # Your bot's telegram username (must enter with '@' in the front of the username)
+    Bot_username = os.environ.get("Bot_username", "@testing449") # Your bot's telegram username (must enter with '@' in the front of the username)
     #If deploying on vps edit the above value as example := Bot_username = "Your-Bot_username-inside-inverted-commas."
     
     OWNER_ID = os.environ.get("OWNER_ID",6214889840) # Your(owner's) telegram id
     #If deploying on vps edit the above value as example := OWNER_ID = Your-telegram id-without-inverted-commas
     
-    REDIS_URI = os.environ.get("REDIS_URI","") # Get This Value from http://redislabs.com/try-free (If you don't know how to obtain the a video tutorial is available here:- https://t.me/botzupdate/5)
+    REDIS_URI = os.environ.get("REDIS_URI","redis-10507.c301.ap-south-1-1.ec2.redns.redis-cloud.com") # Get This Value from http://redislabs.com/try-free (If you don't know how to obtain the a video tutorial is available here:- https://t.me/botzupdate/5)
     #If deploying on vps edit the above value as example := REDIS_URI = "Your-Redis-Endpoint-inside-inverted-commas."
     
-    REDIS_PASS = os.environ.get("REDIS_PASS", None) # Get This Value from http://redislabs.com/try-free (If you don't know how to obtain the a video tutorial is available here:- https://t.me/botzupdate/5)
+    REDIS_PASS = os.environ.get("REDIS_PASS", "a0SzdjaSrTjNJll5doPmUPWwJhvLxIHd") # Get This Value from http://redislabs.com/try-free (If you don't know how to obtain the a video tutorial is available here:- https://t.me/botzupdate/5)
     #If deploying on vps edit the above value as example := REDIS_PASS = "Your-Redis-Password-inside-inverted-commas."
 
     AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split()) # Id's of the telegram users, who you want to allow for multitasking - downloading multiple links at once!
